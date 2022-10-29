@@ -6,7 +6,7 @@ The photo OCR problem focuses on how to get computers to read the text to the pu
 
 First, given the picture it has to look through the image and detect where there is text in the picture.And after it has done that or if it successfully does that it then has to look at these text regions and actually read the text in those regions, and hopefully if it reads it correctly, it'll come up with these transcriptions of what is the text that appears in the image.
 
-![](/Users/rojina/Desktop/AI/machine%20learning/week11/pictures/ocr-pipeline.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week11/pictures/ocr-pipeline.png)
 
 if you're designing a machine learning system one of the most important decisions will often be what exactly is the pipeline that you want to put together or , how do you  break this problem down into a sequence of different modules.
 
@@ -26,9 +26,9 @@ and so by using synthetic data you have essentially an unlimited supply of train
 
 - Taking an existing example and and introducing distortions that amplify to enlarge the training set
 
-![](/Users/rojina/Desktop/AI/machine%20learning/week11/pictures/disortioun.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week11/pictures/disortioun.png)
 
-![](/Users/rojina/Desktop/AI/machine%20learning/week11/pictures/Discussion.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week11/pictures/Discussion.png)
 
 ## Ceiling analysis
 
