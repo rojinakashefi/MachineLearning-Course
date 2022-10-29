@@ -1,0 +1,3 @@
+[submodule "Pacman-AI"]
+	path = Pacman-AI
+	url = https://github.com/rojinakashefi/Pacman-AI.git
