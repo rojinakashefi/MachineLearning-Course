@@ -22,7 +22,7 @@ Neural Networks are a pretty old algorithm that was originally motivated by the 
 
 1. At a very simple level, neurons are basically computational units that take inputs (**dendrites**) as electrical inputs (called "spikes") that are channeled to outputs (**axons**). 
    
-   <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/neuron-in-brain.png" alt="" width="346" data-align="center">
+   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/neuron-in-brain.png" alt="" width="346" data-align="center">
 
 2. In our model, our dendrites are like the input features x1​⋯xn​, and the output is the result of our hypothesis function. 
 
@@ -32,41 +32,41 @@ Neural Networks are a pretty old algorithm that was originally motivated by the 
 
 5. In this situation, our "theta" parameters are sometimes called "weights".
    
-   <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/neural-network-simple.png" alt="" width="196" data-align="center">
+   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/neural-network-simple.png" alt="" width="196" data-align="center">
 
 6. Our input nodes (layer 1), also known as the "input layer", go into another node (layer 2), which finally outputs the hypothesis function, known as the "output layer".
 
 7. We can have intermediate layers of nodes between the input and output layers called the "hidden layers."We label these intermediate or "hidden" layer nodes ​ and call them "activation units."
    
-   ![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/theta-activation.png)
+   ![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/theta-activation.png)
    
    If we had one hidden layer, it would look like:
    
-   <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/activation-units.png" alt="" data-align="center" width="345">
+   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/activation-units.png" alt="" data-align="center" width="345">
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/calculate-activation.png" alt="" data-align="center" width="333">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/calculate-activation.png" alt="" data-align="center" width="333">
 
         We can apply it with vectorized implementation :
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/vectorized-implemention.png" alt="" width="147" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/vectorized-implemention.png" alt="" width="147" data-align="center">
 
        In other words, for layer j=2 and node k, the variable z will be:
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/z-implementation.png" alt="" width="283" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/z-implementation.png" alt="" width="283" data-align="center">
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/vectorized-implementation1.png" alt="" data-align="center" width="147">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/vectorized-implementation1.png" alt="" data-align="center" width="147">
 
         In summary :
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/summary1.png" alt="" data-align="center" width="102">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/summary1.png" alt="" data-align="center" width="102">
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/summary2.png" alt="" width="133" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/summary2.png" alt="" width="133" data-align="center">
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/summary3.png" alt="" width="169" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/summary3.png" alt="" width="169" data-align="center">
 
 8. Each layer gets its own matrix of weights, Θ(j). The dimensions of these matrices of weights is determined as follows:
    
-   ![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/theta-dimension.png)
+   ![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/theta-dimension.png)
    
    
 
@@ -88,20 +88,20 @@ Neural networks can also be used to simulate all logical gates.(you should set y
 
 Use g(z) values from the image below :
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/g(Z).png" alt="" width="239" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/g(Z).png" alt="" width="239" data-align="center">
 
 **Multiclass classification**
 
 To classify data into **multiple classes**, we let our **hypothesis function return a vector of values**. Say we wanted to classify our data into one of four categories. We can define our set of resulting classes as y :
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/multiclass-y.png" alt="" width="212" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/multiclass-y.png" alt="" width="212" data-align="center">
 
 The inner layers, each provide us with some new information which leads to our final hypothesis function. The setup looks like:
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/setup-multiclass.png" alt="" width="288" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/setup-multiclass.png" alt="" width="288" data-align="center">
 
 Our resulting hypothesis for one set of inputs may look like:
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week4/pictures/result-ex.png" alt="" width="170" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week4/pictures/result-ex.png" alt="" width="170" data-align="center">
 
 
