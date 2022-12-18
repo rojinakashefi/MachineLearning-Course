@@ -10,25 +10,25 @@ To attempt classification, one method is to use linear regression and map all pr
 
 Our hypotheses hθ​(x) needs to satisfy 0≤hθ​(x)≤1. This is accomplished by plugging θT*x into the Logistic Function.Our new form uses the "Sigmoid Function," also called the "Logistic Function". The function g(z), shown here, maps any real number to the (0, 1) interval.
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/sigmoid.png" alt="" data-align="center" width="124">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/sigmoid.png" alt="" data-align="center" width="124">
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/sigmoid-graph.png" alt="" width="259" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/sigmoid-graph.png" alt="" width="259" data-align="center">
 
 hθ​(x) will give us the **probability** that our output is 1. For example, hθ​(x)=0.7 gives us a probability of 70% that our output is 1. 
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/probability.png" alt="" width="274" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/probability.png" alt="" width="274" data-align="center">
 
 **Decision Boundary**
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/db1.png" alt="" width="209" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/db1.png" alt="" width="209" data-align="center">
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/db2.png" alt="" width="140" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/db2.png" alt="" width="140" data-align="center">
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/db3.png" alt="" width="166" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/db3.png" alt="" width="166" data-align="center">
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/db4.png" alt="" width="207" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/db4.png" alt="" width="207" data-align="center">
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/db5.png" alt="" width="237" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/db5.png" alt="" width="237" data-align="center">
 
 The input to the sigmoid function g(z) doesn't need to be linear, and could be a function that describes a circle or any shape to fit our data.
 
@@ -38,29 +38,29 @@ We cannot use the same cost function that we use for linear regression because t
 
 - Cost function :
   
-    <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/cost-function.png" alt="vectorized-cost.png" width="294" data-align="center">
+    <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/cost-function.png" alt="vectorized-cost.png" width="294" data-align="center">
     
     
   Vectorized implementation :
   
-  <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/vectorized-cost.png" alt="vectorized-cost.png" width="294" data-align="center">
+  <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/vectorized-cost.png" alt="vectorized-cost.png" width="294" data-align="center">
   
   y = 0 :
   
-  <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/cost-y=0.png" alt="cost-y=0.png" width="156" data-align="center">
+  <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/cost-y=0.png" alt="cost-y=0.png" width="156" data-align="center">
   
   
   y = 1 :
 
-  <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/cost-y=1.png" alt="cost-y=1.png" width="164" data-align="center">
+  <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/cost-y=1.png" alt="cost-y=1.png" width="164" data-align="center">
 
 - Gradient Descent :
   
-  <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/gradient-descent.png" alt="gradient-descent.png" width="244" data-align="center">
+  <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/gradient-descent.png" alt="gradient-descent.png" width="244" data-align="center">
   
   Vectorized implementation :
   
-  <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/vectorized-gradient.png" alt="vectorized-gradient.png" data-align="center" width="296">
+  <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/vectorized-gradient.png" alt="vectorized-gradient.png" data-align="center" width="296">
 
 - Advanced Optimization :
   
@@ -72,7 +72,7 @@ Some classification problmes have more than two categories. Instead of y = {0,1}
 
 We are basically choosing **one class** and then **lumping all the others into a single second class.** We do this repeatedly, applying binary logistic regression to each case, and then use the hypothesis that returned the highest value as our prediction.
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/multiclass.png" alt="multiclass.png" data-align="center" width="213">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/multiclass.png" alt="multiclass.png" data-align="center" width="213">
 
 **The problem of overfitting :**
 
@@ -110,7 +110,7 @@ The λ, or lambda, is the **regularization parameter**. It determines how much t
 
 - If lambda is chosen to be too small, it may cause overfitting.
 
-   <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/cost-regularization.png" alt="cost-regualirzation.png" width="283" data-align="center">
+   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/cost-regularization.png" alt="cost-regualirzation.png" width="283" data-align="center">
 
 **Regularization Linear Regression**
 
@@ -118,21 +118,21 @@ The λ, or lambda, is the **regularization parameter**. It determines how much t
    
    The first term in the above equation, will always be less than 1. Intuitively you can see it as reducing the value of θj​ by some amount on every update.
    
-      <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/liner-gradient-regularization.png" alt="linear-gradient-regualirzation.png" width="283" data-align="center">
+      <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/liner-gradient-regularization.png" alt="linear-gradient-regualirzation.png" width="283" data-align="center">
    
 
 2. Normal Equation :
    
    L is a matrix with 0 at the top left and 1's down the diagonal, with 0's everywhere else. It should have dimension (n+1)×(n+1). 
    
-   <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/linear-regualirzation.png" alt="linear-regualirzation.png" width="283" data-align="center">
+   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/linear-regualirzation.png" alt="linear-regualirzation.png" width="283" data-align="center">
 
 **Regularization Logistic Regression**
 
 1. Cost Function : 
    
-   ![logistic-regualization.png](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/logistic-regualization.png)
+   ![logistic-regualization.png](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/logistic-regualization.png)
 
 2. Gradient Descent : 
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week3/pictures/gradient-regualization.png" alt="gradient-regualization.png" width="369" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week3/pictures/gradient-regualization.png" alt="gradient-regualization.png" width="369" data-align="center">
