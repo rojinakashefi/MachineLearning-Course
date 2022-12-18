@@ -4,19 +4,19 @@
 
 Notation for equations where we can have any number of input variables(features).
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week2/pictures/notations.png" alt="notations.png" width="389" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week2/pictures/notations.png" alt="notations.png" width="389" data-align="center">
 
 The multivariable form of the hypothesis function accommodating these multiple features is as follows:
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week2/pictures/multivariate-linear-regression.png" alt="" width="348" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week2/pictures/multivariate-linear-regression.png" alt="" width="348" data-align="center">
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week2/pictures/multivariate-linear-regression-matrix.png" alt="" width="254" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week2/pictures/multivariate-linear-regression-matrix.png" alt="" width="254" data-align="center">
 
 **Gradient Descent For Multiple Variables**
 
 The gradient descent equation itself is generally the same form; we just have to repeat it for our 'n' features:
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week2/pictures/gradient-descent.png" alt="" width="390" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week2/pictures/gradient-descent.png" alt="" width="390" data-align="center">
 
 **Feature Scaling & Mean normalization**
 
@@ -40,13 +40,13 @@ The goal is to get **all** input variables into roughly one of these ranges usin
   
   Where μi​ is the **average** of <u>all the values for feature (i) </u>and si​ is the range of values (max - min), or si​ is the standard deviation. (dividing by the range, or dividing by the standard deviation, give different results.)
   
-  <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week2/pictures/mean-normalization.png" alt="mean-normalization.png" width="233" data-align="center">
+  <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week2/pictures/mean-normalization.png" alt="mean-normalization.png" width="233" data-align="center">
 
 **Learning Rate**
 
 If u want to check that gradient descent works correctly (Debugging gradient descent) make a plot with *number of iterations* on the x-axis. Now plot the cost function, J(θ) over the number of iterations of gradient descent. If J(θ) ever increases, then you probably need to decrease α.
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week2/pictures/learning-rate.png" alt="learning-rate.png" width="336" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week2/pictures/learning-rate.png" alt="learning-rate.png" width="336" data-align="center">
 
 For sufficiently small learning rates, J(θ) should decrease on every iteration.but if learning rate is too small, gradient descent can be slow to converge.
 
@@ -72,13 +72,13 @@ Gradient descent gives one way of minimizing J. A second way of doing so, this t
 
 In the "Normal Equation" method, we will minimize J by explicitly taking its derivatives with respect to the θj ’s, **and setting them to zero.** This allows us to find the optimum theta without iteration. The normal equation formula is given below:
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week2/pictures/normal-equation.png" alt="normal-equation.png" width="248" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week2/pictures/normal-equation.png" alt="normal-equation.png" width="248" data-align="center">
 
 There is **no need** to do feature scaling with the normal equation.
 
 With the normal equation, computing the inversion has complexity O(n3). So if we have a very large number of features, the normal equation will be slow. In practice, when n exceeds 10,000 it might be a good time to go from a normal solution to an iterative process.
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week2/pictures/comparsion.png" alt="comparsion.png" width="388" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week2/pictures/comparsion.png" alt="comparsion.png" width="388" data-align="center">
 
 If inverse matix is **noninvertible,** the common causes might be having :
 
