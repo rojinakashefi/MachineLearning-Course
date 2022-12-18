@@ -68,7 +68,7 @@ We can measure the accuracy of our hypothesis function by using a cost function.
 
 We need to choose θ(0) and θ(1) in h which minimzie the diffrence bewteen predicted value and actual value. ( idelly diffrecence = 0 → cost function = 0)
 
-<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/tree/main/week1/pictures/cost-function.png" data-align="center" width="412">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week1/pictures/cost-function.png" data-align="center" width="412">
 
 - Cost Function - Intuition I
   
@@ -96,7 +96,7 @@ A smaller α would result in a smaller step and a larger α results in a larger 
 
  The direction in which the step is taken is determined by the <u>partial derivative</u> of J(θ0​,θ1​).
 
-<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/tree/main/week1/pictures/gradient-descent.png" data-align="center" width="194">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week1/pictures/gradient-descent.png" data-align="center" width="194">
 
 **Gradient Descent intuition**
 
@@ -118,8 +118,8 @@ Used one parameter θ1​ and plotted its cost function to implement a gradient 
 
 When specifically applied to the case of linear regression, a new form of the gradient descent equation can be derived. We can substitute our actual cost function and our actual hypothesis function and modify the equation to :
 
-<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/tree/main/week1/pictures/gradient-descent-linear-regression.png" alt="gradient-descent-derivative.png" width="229" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week1/pictures/gradient-descent-linear-regression.png" alt="gradient-descent-derivative.png" width="229" data-align="center">
 
-<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/tree/main/week1/pictures/gradient-descent-derivative.png" alt="gradient-descent-derivative.png" width="229" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week1/pictures/gradient-descent-derivative.png" alt="gradient-descent-derivative.png" width="229" data-align="center">
 
 So, this is simply gradient descent on the original cost function J. This method looks at every example in the entire training set on every step, and is called **batch gradient descent**.
