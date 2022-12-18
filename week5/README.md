@@ -26,7 +26,7 @@ Instead of having one output we have K of them.
 
 If there is a binary classification K = 1 and the output unit is R demensional.
 
-![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/cost-function.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/cost-function.png)
 
 The summation form k equals one through k is for calculating the cost function **over each** of our output unit and loops through the number of output nodes so we can **calculate cost function for each of them.**
 
@@ -50,15 +50,15 @@ We can calculate j of theta using cost function and now we will talk how to comp
 
 2. For computing the derivativers we use backpropagation. In this algorithm we compute delta(l)j which represent the error of j in layer l (**how do we wish the activation value was**). if we have k output units we compute delta for each term. a can be written as h(x) also.
    
-   <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/delta.png" alt="" data-align="center" width="204">
+   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/delta.png" alt="" data-align="center" width="204">
    
    When we compute delta for output layer we will compute it for earlier layers in our network from right to left.
    
    The delta values of **layer l** are calculated by multiplying the **delta values in the next layer** with the **theta matrix of layer l**. We then element-wise **multiply that with a function called g'**, or g-prime, which is the **derivative of the activation function g evaluated with the input values given by z(l)**.
    
-   ![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/delta-earlier-layers.png)
+   ![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/delta-earlier-layers.png)
    
-   <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/g.png" alt="" width="167" data-align="center">
+   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/g.png" alt="" width="167" data-align="center">
    
    Remeber **we dont compute delta for first layer** becuase the activation value for layer one is the input value and there is no error.
    
@@ -66,39 +66,39 @@ We can calculate j of theta using cost function and now we will talk how to comp
    
    We can compute derivitives using by activations and these delta terms.( Ignoring lambda or if it is zero ).
    
-   <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/big-delta.png" alt="" width="181" data-align="center">
+   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/big-delta.png" alt="" width="181" data-align="center">
    
    and the vectorized implementation is :
    
-   <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/vectorized-big-delta.png" alt="" data-align="center" width="226">
+   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/vectorized-big-delta.png" alt="" data-align="center" width="226">
    
    Then we compute D(L)ij terms .
    
    The case of j equals zero corresponds to the bias term so when j equals zero that's why we're missing is an extra regularization term.
    
-   <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/di.png" width="221" data-align="center">
+   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/di.png" width="221" data-align="center">
    
    and finally we compute partial derivitives using D matrix.
    
-   <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/partial-derivitive.png" alt="" data-align="center" width="220">
+   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/partial-derivitive.png" alt="" data-align="center" width="220">
 
 **Summary of Back Propagation Algorithm**
 
-![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/summary.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/summary.png)
 
 So delta terms are computing :
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/delta-z-term.png" alt="" width="234" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/delta-z-term.png" alt="" width="234" data-align="center">
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/cost-i.png" alt="" width="234" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/cost-i.png" alt="" width="234" data-align="center">
 
 If we change z(l)j values we can affect to the values of deltas.
 
 for example:
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/example-1.png" alt="" data-align="center" width="196">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/example-1.png" alt="" data-align="center" width="196">
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/example-2.png" alt="" data-align="center" width="204">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/example-2.png" alt="" data-align="center" width="204">
 
 Dont write derivitives for bias units.
 
@@ -123,17 +123,17 @@ Gradient checking will assure that our backpropagation works as intended. We can
 - **Theta is a real number**
 
 
-  <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/plot-gradient-checking.png" alt="" width="257" data-align="center">
+  <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/plot-gradient-checking.png" alt="" width="257" data-align="center">
   
   
-  <img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/gradientchecking-1.png" alt="" data-align="center" width="278">
+  <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/gradientchecking-1.png" alt="" data-align="center" width="278">
   
   ϵ = 0.0001
 
 - **Theta is a vector**
   
-  ![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/theta-vector.png)
-  ![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week5/pictures/theta-vector-j.png)
+  ![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/theta-vector.png)
+  ![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week5/pictures/theta-vector-j.png)
 
 Finally we check it **gradApprox ≈ deltaVector**. 
 
