@@ -14,15 +14,15 @@ That doesn't need to look at all the training examples in every single iteration
 
 Stochastic gradient descent every iteration is going to be much faster because we don't need to sum up over all the training examples But every iteration is just trying to fit single training example better.
 
-![]https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/sgd-bgd.png)
+![]https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/pictures/sgd-bgd.png)
 
 ## Mini Batch Gradient Descent
 
 Another variation on these ideas is called Mini-batch gradient descent they can work sometimes even a bit faster than stochastic gradient descent. after watching b examples we take a step to global minumim.
 
-![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/mbgds.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/pictures/mbgds.png)
 
-![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/mbgds-2.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/pictures/mbgds-2.png)
 
 So, why do we want to look at b examples at a time rather than look at just a single example at a time as the Stochastic gradient descent? 
 
@@ -38,17 +38,17 @@ So we choose value of b and if you use a good vectorized implementation, sometim
 
 ## Stochastic Gradient Descent Convergence
 
-![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/convergence.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/pictures/convergence.png)
 
 In left top picture the red line is when we use smaller learning rate.
 
 And when we have a noisy output like top right and left buttom we  can increase the number of examples to see a smooth line.
 
-![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/pic1.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/pictures/pic1.png)
 
 For setting alpha :
 
-![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/alpha.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/pictures/alpha.png)
 
 ## Online Learning
 
@@ -62,8 +62,8 @@ Interesting effect of this sort of online learning algorithm is that it can adap
 
 Some machine learning problems are just too big to run on one machine, sometimes maybe you just so much data you just don't ever want to run all that data through a single computer, no matter what algorithm you would use on that computer.
 
-![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/mapreduce.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/pictures/mapreduce.png)
 
-![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/multi-com.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/pictures/multi-com.png)
 
-![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/multi-core.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/pictures/multi-core.png)
