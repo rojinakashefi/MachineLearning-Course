@@ -14,7 +14,7 @@ That doesn't need to look at all the training examples in every single iteration
 
 Stochastic gradient descent every iteration is going to be much faster because we don't need to sum up over all the training examples But every iteration is just trying to fit single training example better.
 
-![]https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/pictures/sgd-bgd.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week10/pictures/sgd-bgd.png)
 
 ## Mini Batch Gradient Descent
 
