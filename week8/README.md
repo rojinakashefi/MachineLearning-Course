@@ -18,7 +18,7 @@ This algorithm is the most used algorithm in clurstering algorithms.
    
    we want to **find a k** which minimize to distance between our training example and our cluster centroids.
    
-   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/cluster-assignment-1.png" alt="" width="194">
+   <img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/cluster-assignment-1.png" alt="" width="194">
    
    Its applying cost function with respect to c(i) in this step.
 
@@ -44,7 +44,7 @@ Run the k means clustering algorithm on the data set so we can get separated clu
 
 - Mc(i) = cluster centroid of cluster to which example x(i) has been assigned
   
-  ![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/cost-func.png)
+  ![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/cost-func.png)
 
 #### **Random Initalization K-mean**
 
@@ -62,7 +62,7 @@ If **K is small** so we have small number of cluster centroid its **more useful 
 
 We are going to run cost function with different number of clusters.
 
-<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/ellbow-method.png" alt="" width="177">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/ellbow-method.png" alt="" width="177">
 
 But the curve is usally more ambigious and there is no fixed elbow number.
 
@@ -82,7 +82,7 @@ If we are going to reduce n-dimension to k-dimensional we need to find k vectors
 
 The left picture is linear regression which shows different between hypothesis value and real value and the right picture shows the projection error .
 
-<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pca-not-lr.png" title="" alt="" width="312">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/pca-not-lr.png" title="" alt="" width="312">
 
 In linear regression we want to predict y.
 
@@ -92,15 +92,15 @@ In pca we want to find features.
 
 1. Preproccesing (Feature scaling/mean normalization)
    
-   <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/mean-normalization.png" title="" alt="" width="221">
+   <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/mean-normalization.png" title="" alt="" width="221">
    
-   <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/feature-scaling.png" title="" alt="" width="220">
+   <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/feature-scaling.png" title="" alt="" width="220">
 
 2. Compute covariance matrix and eigen vectors
    
-   <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/eigen-vector.png" title="" alt="" width="260">
+   <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/eigen-vector.png" title="" alt="" width="260">
    
-   <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/u-matrix.png" title="" alt="" width="261">
+   <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/u-matrix.png" title="" alt="" width="261">
    
    If we want to reduce to k dimensional we only take u(1)
    
@@ -108,33 +108,33 @@ In pca we want to find features.
 
 3. Compute Z where we want to project our data onto.
    
-   <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/z-matrix.png" title="" alt="" width="349">
+   <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/z-matrix.png" title="" alt="" width="349">
 
 #### **Reconstruction from compressed Representation**
 
-<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/Reconstruction.png" title="" alt="" width="284">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/Reconstruction.png" title="" alt="" width="284">
 
 #### **Choosing the number of principle components**
 
 - Average squared projection error
   
-  <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/average-squared.png" title="" alt="" width="225">
+  <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/average-squared.png" title="" alt="" width="225">
 
 - Total variation in the data
   
-  <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/variation.png" title="" alt="" width="191">
+  <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/variation.png" title="" alt="" width="191">
 
 - Choose k to be smallest value which 99 of variance is retained
   
-  <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/choose-k.png" title="" alt="" width="241">
+  <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/choose-k.png" title="" alt="" width="241">
 
-<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/choosing-k.png" title="" alt="" width="250">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/choosing-k.png" title="" alt="" width="250">
 
 Another way is use different number of k until we reach >= 0.99:
 
-<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/s-matrix.png" title="" alt="" width="193">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/s-matrix.png" title="" alt="" width="193">
 
-<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/choosing-k-second.png" title="" alt="" width="202">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week8/pictures/choosing-k-second.png" title="" alt="" width="202">
 
 Mapping X(i) -> Z(i) should be defined by **running PCA only on the training set**. 
 
