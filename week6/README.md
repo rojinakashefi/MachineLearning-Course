@@ -52,19 +52,19 @@ There is a tought which getting a really low value of training error might be a 
       
       Used squared error :
       
-      <img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/linear-regression-jtest.png" title="" alt="" width="373">
+      <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/linear-regression-jtest.png" title="" alt="" width="373">
    
    2. **Logistic Regression**
       
       1. Compute cost function
          
-         ![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/logistic-regression-jtest.png)
+         ![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/logistic-regression-jtest.png)
       
       2. Misclassification error
          
          EIther you get a example right or wrong.
          
-         ![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/miss-classification.png)
+         ![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/miss-classification.png)
 
 ---
 
@@ -92,7 +92,7 @@ We split our dataset to three parts.
 
 3. Third section our Test set ( 20% )
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/tr-cv-ts.png" title="" alt="" width="320">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/tr-cv-ts.png" title="" alt="" width="320">
 
 Instead of using test set to select the model, we use the **cross validation set to select the model**. In this way we compute Jcv with theta it composed from min cost function and in this way <u>we fit d on our cv dataset and we can use our test set to estimate the generalization error of the model</u>.
 
@@ -102,7 +102,7 @@ Instead of using test set to select the model, we use the **cross validation set
 
 If you run a learning algorithm and it doesn't do as long as you are hoping, it will be either a high bias problem or a high variance problem, in other words, either an underfitting problem or an overfitting problem. In this case, it's very important to figure out which of these two problems is bias or variance or a bit of both that you actually have.
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/jtrain-vs-jcv1.png" title="" alt="" width="196">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/jtrain-vs-jcv1.png" title="" alt="" width="196">
 
 If your **Jcv or J test** is High:
 
@@ -136,7 +136,7 @@ If your **Jcv or J test** is High:
 
 You can use different lambdas from a specific range and find the theta which minimize the cost function using regularization term, then compute  Jcv without regularization term and only with squared error part and pick the one which give the smallest value for cross validation set.apply it on Jtest​(Θ) to see if it has a good generalization of the problem.
 
-<img title="" src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/lambda-jtrain-vs-jcv.png" alt="" width="237">
+<img title="" src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/lambda-jtrain-vs-jcv.png" alt="" width="237">
 
 ---
 
@@ -152,7 +152,7 @@ Training an algorithm on a **very few number of data points** (such as 1, 2 or 3
 
 - On cross validation set because we cant generalize the hypothesis we get from three training set in cv set we have a high error at first but after increasing the training set we can fit to cv set better so the error reduces.
   
-  <img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/m-jtrain-vs-jcv.png" title="" alt="" width="331">
+  <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/m-jtrain-vs-jcv.png" title="" alt="" width="331">
 
 **Experiencing high bias:**
 
@@ -162,7 +162,7 @@ Training an algorithm on a **very few number of data points** (such as 1, 2 or 3
 
 If a learning algorithm is suffering from **high bias**, getting more training data will not **(by itself)** help much.
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/m-highbias.png" title="" alt="" width="193">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/m-highbias.png" title="" alt="" width="193">
 
 **Experiencing high variance:**
 
@@ -172,7 +172,7 @@ If a learning algorithm is suffering from **high bias**, getting more training d
 
 If a learning algorithm is suffering from **high variance**, getting more training data is likely to help.
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/m-highvariance.png" title="" alt="" width="194">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/m-highvariance.png" title="" alt="" width="194">
 
 ---
 
@@ -222,15 +222,15 @@ It is very important to get error results as a single, **numerical value**. Othe
 
  y = 1 in presence of rare class that we want to detect. used for skewed classes.
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/precision:recall.png" title="" alt="" width="170">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/precision:recall.png" title="" alt="" width="170">
 
 Precision : Of all the cases we **predicted** true (y=1), what fraction **actually** are true.
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/precision.png" title="" alt="" width="340">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/precision.png" title="" alt="" width="340">
 
 Recall : Off all the cases which **actually** are true,  How many did we **predicted** true.
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/recall.png" title="" alt="" width="344">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/recall.png" title="" alt="" width="344">
 
 **Trade off between precision/Recall**
 
@@ -244,10 +244,10 @@ In generall be can say : *Predict 1 if hΘ(x) >= threshold*
   
   1. Change the threshold lower : lower precision, higher recall.
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/precision:recall:tradeoff.png" title="" alt="" width="219">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/precision:recall:tradeoff.png" title="" alt="" width="219">
 
 For comparing algorithm using precision/recall we should have a single real number evaluation metric.
 
 **F score** = 2 * ((P * R) / ( P+R ) )
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week6/pictures/fscore.png" title="" alt="" width="250">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week6/pictures/fscore.png" title="" alt="" width="250">
