@@ -6,11 +6,11 @@ SVM sometimes gives a cleaner, and sometimes more powerful way of learning compl
 
 Cost Function of Logistic regression for a single training example looks like:
 
-![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week7/pictures/logistic-regreesion-cost-1.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week/pictures/logistic-regreesion-cost-1.png)
 
-![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week7/pictures/logistic-regression-cost-2.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week/pictures/logistic-regression-cost-2.png)
 
-![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week7/pictures/svm-cost.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week/pictures/svm-cost.png)
 
 We **remove term 1/m** in logistic regression because the <u>coeffiecent doesnt make change in  the answer</u> so now the **logistic regression form is A + lambda * B**. (A : we wanted the training set well, B: keeping the values of the parameter small)
 
@@ -20,21 +20,21 @@ So for logistic regression, if we set a very large value of lambda, that means y
 
 If C = 1/lambda then the logistic term and svm be the same.
 
-![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week7/pictures/svm-cost-1.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week/pictures/svm-cost-1.png)
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week7/pictures/svm-hypothesis.png" title="" alt="" width="227">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week/pictures/svm-hypothesis.png" title="" alt="" width="227">
 
 **SVM Descision Boundary**
 
 - Linear separable case
   
-  <img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week7/pictures/margin.png" title="" alt="" width="214">
+  <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week/pictures/margin.png" title="" alt="" width="214">
 
 - Linear separable case in presence of outliners
   
   If c very large the line will change but if c is small the line wont change that much.
   
-  <img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week7/pictures/outliner.png" title="" alt="" width="311">
+  <img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week/pictures/outliner.png" title="" alt="" width="311">
 
 Vector theta must be 90 degrees to decision boundry.
 
@@ -44,11 +44,11 @@ Kernels are used for adapting support vector machines in order to develop comple
 
 Instead of defining <u>a lot of</u> feature , given x we compute new feature depending on proximity to landmarks l(1), l(2), l(3).
 
-![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week7/pictures/kernel.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week/pictures/kernel.png)
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week7/pictures/f-conditions.png" title="" alt="" width="292">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week/pictures/f-conditions.png" title="" alt="" width="292">
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week7/pictures/kernel-hypothesis.png" title="" alt="" width="291">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week/pictures/kernel-hypothesis.png" title="" alt="" width="291">
 
 **Choosing the landmarks**
 
@@ -60,11 +60,11 @@ to put landmarks as exactly the same locations as the training examples.
 
 This shows **how close** the training sets are with each other.
 
-<img src="https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week7/pictures/choosing-landmarks.png" title="" alt="" width="293">
+<img src="https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week/pictures/choosing-landmarks.png" title="" alt="" width="293">
 
 In this case n ( number of features) = m.
 
-![](https://github.com/rojinakashefi/Intro-to-Artificial-Intelligence/blob/main/machine%20learning/week7/pictures/kernel-cost.png)
+![](https://github.com/rojinakashefi/MachineLearning-Course/blob/main/week/pictures/kernel-cost.png)
 
 **SVM parameters**
 
